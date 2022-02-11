@@ -5,7 +5,7 @@ const sessionController = require("./controller/session-controller")
 const app = express()
 
 app.get("/",function(req,res){
-    res.write("welcome...")
+    res.write("welcome...in INDIA")
     res.end()
 })
 
