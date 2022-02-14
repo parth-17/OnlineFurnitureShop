@@ -10,8 +10,13 @@ function signup(req,res){
     res.write(signupHtml)
     res.end()
 }
+function saveUser(req,res){
+    console.log(req.body)
 
+    res.write("data saved")
+    res.end()
+}
 module.exports.login = login
 module.exports.signup = signup
-
+module.exports.saveUser = saveUser
  
