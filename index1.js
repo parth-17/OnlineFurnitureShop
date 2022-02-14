@@ -12,8 +12,7 @@ app.get("/",function(req,res){
     res.write("welcome...")
     res.end()
 })
-
-          
+      
 app.get("/login",sessionController.login)
 app.get("/signup",sessionController.signup) 
 app.post("/saveUser",sessionController.saveUser)
