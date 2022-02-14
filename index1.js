@@ -15,7 +15,7 @@ app.get("/",function(req,res){
           
 app.get("/login",sessionController.login)
 app.get("/signup",sessionController.signup) 
-app.post("/signUser",sessionController.signUser)
+app.get("/saveUser",sessionController.saveUser)
 
 app.listen(3000,function(){
   console.log("server started on 3000");  
