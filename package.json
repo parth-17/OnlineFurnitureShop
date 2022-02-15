@@ -3,12 +3,12 @@
     "@material-ui/icons": "^4.11.2",
     "express": "^4.17.2",
     "fs": "^0.0.1-security",
-    "makoto-logger": "^1.0.2"
+    "makoto-logger": "^1.0.2",
+    "mongoose": "^6.2.1"
   },
   "name": "onlinefurnitureshop",
   "version": "1.0.0",
   "main": "calc.js",
-  "devDependencies": {},
   "scripts": {
     "nodemon": "nodemon index1.js"
   },
