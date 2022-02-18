@@ -3,6 +3,24 @@
     "@material-ui/icons": "^4.11.2",
     "express": "^4.17.2",
     "fs": "^0.0.1-security",
-    "makoto-logger": "^1.0.2"
-  }
+    "makoto-logger": "^1.0.2",
+    "mongoose": "^6.2.1"
+  },
+  "name": "onlinefurnitureshop",
+  "version": "1.0.0",
+  "main": "calc.js",
+  "scripts": {
+    "nodemon": "nodemon index1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parth-17/OnlineFurnitureShop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parth-17/OnlineFurnitureShop/issues"
+  },
+  "homepage": "https://github.com/parth-17/OnlineFurnitureShop#readme",
+  "description": ""
 }

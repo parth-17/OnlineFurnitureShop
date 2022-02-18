@@ -15,10 +15,6 @@ calc.sub(12,12)
 
 
 
-
-
-
-
 // console.log("hello")
 
 // var x =10 //--> global variable  
