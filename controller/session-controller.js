@@ -10,8 +10,16 @@ function signup(req,res){
     res.write(signupHtml)
     res.end()
 }
+function saveUser(req,res){
+    console.log(req.body)
 
+    res.json({
+        msg :"done",
+        status:200,
+        data:req.body
+    })
+}
 module.exports.login = login
 module.exports.signup = signup
-
+module.exports.saveUser = saveUser
  
