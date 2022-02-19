@@ -56,3 +56,16 @@ module.exports.deleteUser = function(req,res){
 }
 
 //update
+module.exports.updateUser = function(req,res){
+    
+    let userId = req.body.userId
+    let userName = req.body.userName
+    userModel.updateOne({_id:userId},{userName:userName},function(err,success){
+        if(err){
+            res.json({ msg:"Something went wrong!!!",data:err, status:-1 })
+        }else{
+            res.json({ msg:"Users Updated...", status:200, data:success})
+        }
+        
+    })
+}
