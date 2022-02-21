@@ -53,8 +53,8 @@ module.exports.updateRole = function(req,res){
         if(err){
             res.json({ msg:"Something went wrong!!!",data:err, status:-1 })
         }else{
-            res.json({ msg:"Updated...", status:200, data:success})
+            res.json({ msg:"Roles Updated...", status:200, data:success})
         }
-        
+        //done
     })
 }
