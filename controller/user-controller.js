@@ -63,13 +63,13 @@ module.exports.deleteUser = function(req,res){
 //update
 module.exports.updateUser = function(req,res){
     
-    let userId = req.body.userId
-    let userName = req.body.userName
-    let email = req.body.email
-    let password = req.body.password
-    let role = req.body.role
+    let paramuserId = req.body.userId
+    let paramuserName = req.body.userName
+    let paramemail = req.body.email
+    let parampassword = req.body.password
+    //let role = req.body.role
 
-    UserModel.updateOne({_id:userId},{userName:userName,email:email,password:password},{role:role},function(err,success){
+    UserModel.updateOne({_id:paramuserId},{userName:paramuserName,email:paramemail,password:parampassword},/*{role:role}*/function(err,success){
         if(err){
             res.json({ msg:"Something went wrong!!!",data:err, status:-1 })
         }else{

@@ -37,7 +37,7 @@ module.exports.deleteCategory = function(req,res){
     
     let categoryId = req.params.categoryId
     
-    CategoryModel.deleteOne({_id:categoryId},function(err,success){
+    CategoryModel.deleteOne({"_id": categoryId},function(err,success){
         if(err){
             res.json({msg:"SWR in delete category",data :err, status:-1})
         }else{
