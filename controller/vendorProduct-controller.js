@@ -1,5 +1,5 @@
 const VendorProductModel = require("../model/vendorProduct-model")
-const VendorProduct = require("../model/vendorProduct-model")
+// const VendorProduct = require("../model/vendorProduct-model")
 
 //add
 
