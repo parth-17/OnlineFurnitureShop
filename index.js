@@ -15,7 +15,8 @@ const ProductController = require("./controller/product-controller")
 const VendorProductController = require("./controller/vendorProduct-controller")
 const CartController = require("./controller/cart-controller")
 const StatusController = require("./controller/status-controller")
-
+const OrderController = require("./controller/order-controller")
+const OrderDetailController = require("./controller/orderDetail-controller")
 
 const { PermContactCalendar } = require("@material-ui/icons")
 
@@ -140,7 +141,17 @@ app.get("/status", StatusController.getAllStatus)
 app.delete("/status/:statusId", StatusController.deleteStatus)
 app.put("/status", StatusController.updateStatus)
 
+// order 
+app.post("/orders", OrderController.addOrder)
+app.get("/orders", OrderController.getAllOrders)
+app.delete("/orders/:orderId", OrderController.deleteOrder)
+app.put("/orders", OrderController.updateOrder)
 
+// orderDetail 
+app.post("/orderDetails", OrderDetailController.addOrderDetail)
+app.get("/orderDetails", OrderDetailController.getAllOrderDetails)
+app.delete("/orderDetails/:orderDetailId", OrderDetailController.deleteOrderDetail)
+app.put("/orderDetails", OrderDetailController.updateOrderDetail)
 
 
 //server
