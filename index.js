@@ -12,8 +12,12 @@ const CityController = require("./controller/city-controller")
 const VendorDetailsController = require("./controller/vendorDetails-controller")
 const CustomerAddressController = require("./controller/customerAddress-controller")
 const ProductController = require("./controller/product-controller")
-const { PermContactCalendar } = require("@material-ui/icons")
+const VendorProductController = require("./controller/vendorProduct-controller")
+const CartController = require("./controller/cart-controller")
+const StatusController = require("./controller/status-controller")
 
+
+const { PermContactCalendar } = require("@material-ui/icons")
 
 const app = express()
 
@@ -115,6 +119,29 @@ app.post("/products", ProductController.addProduct)
 app.get("/products", ProductController.getAllProducts)
 app.delete("/products/:productId", ProductController.deleteProduct)
 app.put("/products", ProductController.updateProducts)
+
+// vendor product details
+
+app.post("/vendorProducts", VendorProductController.addVendorProduct)
+app.get("/vendorProducts", VendorProductController.getAllVendorProducts)
+app.delete("/vendorProducts/:vendorProductId", VendorProductController.deleteVendorProduct)
+app.put("/vendorProducts", VendorProductController.updateVendorProduct)
+
+// cart 
+app.post("/carts", CartController.addCart)
+app.get("/carts", CartController.getAllCart)
+app.delete("/carts/:cartId", CartController.deleteCart)
+app.put("/carts", CartController.updateCart)
+
+// status 
+
+app.post("/status", StatusController.addStatus)
+app.get("/status", StatusController.getAllStatus)
+app.delete("/status/:statusId", StatusController.deleteStatus)
+app.put("/status", StatusController.updateStatus)
+
+
+
 
 //server
 
