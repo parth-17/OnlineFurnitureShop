@@ -9,7 +9,7 @@ const UserSchema = new mongoose.Schema({
         type:String
     },
     password:{
-        type:String
+        type:String, required: true
     },
 
     //foreign key
