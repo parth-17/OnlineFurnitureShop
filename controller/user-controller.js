@@ -1,7 +1,8 @@
 const bcrypt = require("bcrypt")
 const UserModel = require("../model/user-model")
 
-//add [Post]
+// add [Post]
+
 module.exports.addUser = function(req,res){
 
     let firstName = req.body.firstName
@@ -31,7 +32,7 @@ module.exports.addUser = function(req,res){
     
 }
 
-//list
+// list
 
 module.exports.getAllUsers = function(req,res){
     
@@ -45,7 +46,7 @@ module.exports.getAllUsers = function(req,res){
 }
 
 
-//delete
+// delete
 
 module.exports.deleteUser = function(req,res){
     //params userId
@@ -60,7 +61,8 @@ module.exports.deleteUser = function(req,res){
     })
 }
 
-//update
+// update
+
 module.exports.updateUser = function(req,res){
     
     let paramuserId = req.body.userId
@@ -79,7 +81,8 @@ module.exports.updateUser = function(req,res){
     })
 }
 
-//login
+// login
+
 module.exports.login = function(req,res){
 
     let param_email = req.body.email
