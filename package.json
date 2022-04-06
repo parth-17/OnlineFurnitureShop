@@ -2,7 +2,8 @@
   "dependencies": {
     "@material-ui/icons": "^4.11.2",
     "bcrypt": "^5.0.1",
-    "express": "^4.17.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "fs": "^0.0.1-security",
     "makoto-logger": "^1.0.2",
     "mongoose": "^6.2.1"

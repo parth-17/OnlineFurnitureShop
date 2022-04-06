@@ -1,0 +1,81 @@
+const products = [
+  {
+    _id: "1",
+    name: "Sofa Set",
+    image: "/images/sofa1.jpg",
+    description:
+      "Sofa Set cream color with yellow cousions and warm look, comfortable and spoongy ",
+    brand: "GharWakhri",
+    category: "Sofa",
+    price: 20.99,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 12,
+  },
+  {
+    _id: "2",
+    name: "Green Long 4 Sitter Sofa",
+    image: "/images/sofa2.jpg",
+    description:
+      "Say hello to the Micromax IN 1b smartphone whose powerful MediaTek Helio G35 gaming processor and a 5000 mAh battery will pave the way for effortless multitasking and usage.",
+    brand: "Godrej",
+    category: "Sofa",
+    price: 599.99,
+    countInStock: 7,
+    rating: 4.0,
+    numReviews: 8,
+  },
+  {
+    _id: "3",
+    name: "Dark Green Corner Sofa",
+    image: "/images/sofa3.jpg",
+    description:
+      "Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design",
+    brand: "Blue Furniture",
+    category: "Sofa",
+    price: 929.99,
+    countInStock: 5,
+    rating: 3,
+    numReviews: 12,
+  },
+  {
+    _id: "4",
+    name: "White Double Bed",
+    image: "/images/bed1.jpeg",
+    description: "White Double Bed with crved light look",
+    brand: "Blue Furniture",
+    category: "Beds",
+    price: 399.99,
+    countInStock: 11,
+    rating: 5,
+    numReviews: 12,
+  },
+  {
+    _id: "5",
+    name: "Authentic Wall Attach Double Bed",
+    image: "/images/bed2.jpeg",
+    description:
+      "Authentic Wall Attched Double Bed with off white color and brown shade sunmica",
+    brand: "LogiShop",
+    category: "Beds",
+    price: 149.99,
+    countInStock: 7,
+    rating: 3.5,
+    numReviews: 10,
+  },
+  {
+    _id: "6",
+    name: "Dark Purple Double Bed",
+    image: "/images/bed3.jpeg",
+    description:
+      "Dark Purple Double Bed for new Married couple Soft and Spongy",
+    brand: "LogiShop",
+    category: "Beds",
+    price: 129.99,
+    countInStock: 0,
+    rating: 4,
+    numReviews: 12,
+  },
+];
+
+module.exports = products;
