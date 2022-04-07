@@ -1,13 +1,13 @@
-const mongoose = require("mongoose")
-const StateModel = require("./state-model")
+const mongoose = require("mongoose");
+const { required } = require("nodemon/lib/config");
+const StateModel = require("./state-model");
 
 const StatusSchema = new mongoose.Schema({
+  status: {
+    type: String,
+    required: true,
+  },
+});
 
-    status: {
-        type: String
-    }
-
-})
-
-const StatusModel = mongoose.model("status",StatusSchema)
-module.exports = StatusModel
+const StatusModel = mongoose.model("status", StatusSchema);
+module.exports = StatusModel;
